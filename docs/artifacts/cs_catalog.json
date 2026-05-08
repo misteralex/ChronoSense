@@ -1,0 +1,666 @@
+{
+    "metadata": {
+        "strategy": "8x8_id_sync_agnostic",
+        "total_probes": 64,
+        "source_db": "chronosense.db"
+    },
+    "groups": {
+        "group_0": [
+            {
+                "id": 764,
+                "pair_id": 0,
+                "var": "buf",
+                "prob": 2230.0,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*buf)",
+                "anchor": "static void ngx_resolver_process_a ( ngx_resolver_t * r , u_char * buf , size_t n , ngx_uint_t ident , ngx_uint_t code , ngx_uint_t qtype , ngx_uint_t nan , ngx_uint_t trunc , ngx_uint_t ans )",
+                "file": "src/core/ngx_resolver.c"
+            },
+            {
+                "id": 717,
+                "pair_id": 0,
+                "var": "ctx",
+                "prob": 1927.5,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*ctx)",
+                "anchor": "static ngx_int_t ngx_resolve_name_locked ( ngx_resolver_t * r , ngx_resolver_ctx_t * ctx , ngx_str_t * name )",
+                "file": "src/core/ngx_resolver.c"
+            },
+            {
+                "id": 718,
+                "pair_id": 1,
+                "var": "name",
+                "prob": 1927.5,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*name)",
+                "anchor": "static ngx_int_t ngx_resolve_name_locked ( ngx_resolver_t * r , ngx_resolver_ctx_t * ctx , ngx_str_t * name )",
+                "file": "src/core/ngx_resolver.c"
+            },
+            {
+                "id": 781,
+                "pair_id": 1,
+                "var": "buf",
+                "prob": 1777.5,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*buf)",
+                "anchor": "static void ngx_resolver_process_srv ( ngx_resolver_t * r , u_char * buf , size_t n , ngx_uint_t ident , ngx_uint_t code , ngx_uint_t nan , ngx_uint_t trunc , ngx_uint_t ans )",
+                "file": "src/core/ngx_resolver.c"
+            },
+            {
+                "id": 3006,
+                "pair_id": 2,
+                "var": "ctx",
+                "prob": 1735.0,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*ctx)",
+                "anchor": "static void ngx_mail_auth_http_process_headers ( ngx_mail_session_t * s , ngx_mail_auth_http_ctx_t * ctx )",
+                "file": "src/mail/ngx_mail_auth_http_module.c"
+            },
+            {
+                "id": 503,
+                "pair_id": 2,
+                "var": "cache",
+                "prob": 1627.5,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*cache)",
+                "anchor": "ngx_int_t ngx_open_cached_file ( ngx_open_file_cache_t * cache , ngx_str_t * name , ngx_open_file_info_t * of , ngx_pool_t * pool )",
+                "file": "src/core/ngx_open_file_cache.c"
+            },
+            {
+                "id": 504,
+                "pair_id": 3,
+                "var": "name",
+                "prob": 1627.5,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*name)",
+                "anchor": "ngx_int_t ngx_open_cached_file ( ngx_open_file_cache_t * cache , ngx_str_t * name , ngx_open_file_info_t * of , ngx_pool_t * pool )",
+                "file": "src/core/ngx_open_file_cache.c"
+            },
+            {
+                "id": 505,
+                "pair_id": 3,
+                "var": "pool",
+                "prob": 1627.5,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*pool)",
+                "anchor": "ngx_int_t ngx_open_cached_file ( ngx_open_file_cache_t * cache , ngx_str_t * name , ngx_open_file_info_t * of , ngx_pool_t * pool )",
+                "file": "src/core/ngx_open_file_cache.c"
+            }
+        ],
+        "group_1": [
+            {
+                "id": 377,
+                "pair_id": 0,
+                "var": "key",
+                "prob": 1570.0,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*key)",
+                "anchor": "ngx_int_t ngx_hash_add_key ( ngx_hash_keys_arrays_t * ha , ngx_str_t * key , void * value , ngx_uint_t flags )",
+                "file": "src/core/ngx_hash.c"
+            },
+            {
+                "id": 3108,
+                "pair_id": 0,
+                "var": "rev",
+                "prob": 1462.5,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*rev)",
+                "anchor": "static void ngx_mail_proxy_smtp_handler ( ngx_event_t * rev )",
+                "file": "src/mail/ngx_mail_proxy_module.c"
+            },
+            {
+                "id": 3211,
+                "pair_id": 1,
+                "var": "cycle",
+                "prob": 1235.0,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*cycle)",
+                "anchor": "void ngx_master_process_cycle ( ngx_cycle_t * cycle )",
+                "file": "src/os/unix/ngx_process_cycle.c"
+            },
+            {
+                "id": 3211,
+                "pair_id": 1,
+                "var": "cycle",
+                "prob": 1235.0,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*cycle)",
+                "anchor": "void ngx_master_process_cycle ( ngx_cycle_t * cycle )",
+                "file": "src/os/win32/ngx_process_cycle.c"
+            },
+            {
+                "id": 3247,
+                "pair_id": 2,
+                "var": "cycle",
+                "prob": 1235.0,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*cycle)",
+                "anchor": "void ngx_master_process_cycle ( ngx_cycle_t * cycle )",
+                "file": "src/os/unix/ngx_process_cycle.c"
+            },
+            {
+                "id": 3247,
+                "pair_id": 2,
+                "var": "cycle",
+                "prob": 1235.0,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*cycle)",
+                "anchor": "void ngx_master_process_cycle ( ngx_cycle_t * cycle )",
+                "file": "src/os/win32/ngx_process_cycle.c"
+            },
+            {
+                "id": 805,
+                "pair_id": 3,
+                "var": "buf",
+                "prob": 1152.5,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*buf)",
+                "anchor": "static void ngx_resolver_process_ptr ( ngx_resolver_t * r , u_char * buf , size_t n , ngx_uint_t ident , ngx_uint_t code , ngx_uint_t nan )",
+                "file": "src/core/ngx_resolver.c"
+            },
+            {
+                "id": 588,
+                "pair_id": 3,
+                "var": "line",
+                "prob": 1042.5,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*line)",
+                "anchor": "ngx_int_t ngx_parse_time ( ngx_str_t * line , ngx_uint_t is_sec )",
+                "file": "src/core/ngx_parse.c"
+            }
+        ],
+        "group_2": [
+            {
+                "id": 3076,
+                "pair_id": 0,
+                "var": "rev",
+                "prob": 1010.0,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*rev)",
+                "anchor": "void ngx_mail_imap_auth_state ( ngx_event_t * rev )",
+                "file": "src/mail/ngx_mail_imap_handler.c"
+            },
+            {
+                "id": 3091,
+                "pair_id": 0,
+                "var": "rev",
+                "prob": 997.5,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*rev)",
+                "anchor": "void ngx_mail_pop3_auth_state ( ngx_event_t * rev )",
+                "file": "src/mail/ngx_mail_pop3_handler.c"
+            },
+            {
+                "id": 540,
+                "pair_id": 1,
+                "var": "ctx",
+                "prob": 995.0,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*ctx)",
+                "anchor": "ngx_int_t ngx_output_chain ( ngx_output_chain_ctx_t * ctx , ngx_chain_t * in )",
+                "file": "src/core/ngx_output_chain.c"
+            },
+            {
+                "id": 660,
+                "pair_id": 1,
+                "var": "tree",
+                "prob": 985.0,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*tree)",
+                "anchor": "void ngx_rbtree_delete ( ngx_rbtree_t * tree , ngx_rbtree_node_t * node )",
+                "file": "src/core/ngx_rbtree.c"
+            },
+            {
+                "id": 661,
+                "pair_id": 2,
+                "var": "node",
+                "prob": 985.0,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*node)",
+                "anchor": "void ngx_rbtree_delete ( ngx_rbtree_t * tree , ngx_rbtree_node_t * node )",
+                "file": "src/core/ngx_rbtree.c"
+            },
+            {
+                "id": 727,
+                "pair_id": 2,
+                "var": "ctx",
+                "prob": 970.0,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*ctx)",
+                "anchor": "ngx_int_t ngx_resolve_addr ( ngx_resolver_ctx_t * ctx )",
+                "file": "src/core/ngx_resolver.c"
+            },
+            {
+                "id": 328,
+                "pair_id": 3,
+                "var": "ctx",
+                "prob": 942.5,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*ctx)",
+                "anchor": "ngx_int_t ngx_walk_tree ( ngx_tree_ctx_t * ctx , ngx_str_t * tree )",
+                "file": "src/core/ngx_file.c"
+            },
+            {
+                "id": 329,
+                "pair_id": 3,
+                "var": "tree",
+                "prob": 942.5,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*tree)",
+                "anchor": "ngx_int_t ngx_walk_tree ( ngx_tree_ctx_t * ctx , ngx_str_t * tree )",
+                "file": "src/core/ngx_file.c"
+            }
+        ],
+        "group_3": [
+            {
+                "id": 3223,
+                "pair_id": 0,
+                "var": "cycle",
+                "prob": 922.5,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*cycle)",
+                "anchor": "static void ngx_worker_process_cycle ( ngx_cycle_t * cycle , char * mevn )",
+                "file": "src/os/win32/ngx_process_cycle.c"
+            },
+            {
+                "id": 3223,
+                "pair_id": 0,
+                "var": "cycle",
+                "prob": 922.5,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*cycle)",
+                "anchor": "static void ngx_worker_process_cycle ( ngx_cycle_t * cycle , void * data )",
+                "file": "src/os/unix/ngx_process_cycle.c"
+            },
+            {
+                "id": 3256,
+                "pair_id": 1,
+                "var": "cycle",
+                "prob": 922.5,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*cycle)",
+                "anchor": "static void ngx_worker_process_cycle ( ngx_cycle_t * cycle , char * mevn )",
+                "file": "src/os/win32/ngx_process_cycle.c"
+            },
+            {
+                "id": 3256,
+                "pair_id": 1,
+                "var": "cycle",
+                "prob": 922.5,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*cycle)",
+                "anchor": "static void ngx_worker_process_cycle ( ngx_cycle_t * cycle , void * data )",
+                "file": "src/os/unix/ngx_process_cycle.c"
+            },
+            {
+                "id": 8,
+                "pair_id": 2,
+                "var": "cycle",
+                "prob": 900.0,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*cycle)",
+                "anchor": "char * * ngx_set_environment ( ngx_cycle_t * cycle , ngx_uint_t * last )",
+                "file": "src/core/nginx.c"
+            },
+            {
+                "id": 9,
+                "pair_id": 2,
+                "var": "last",
+                "prob": 900.0,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*last)",
+                "anchor": "char * * ngx_set_environment ( ngx_cycle_t * cycle , ngx_uint_t * last )",
+                "file": "src/core/nginx.c"
+            },
+            {
+                "id": 914,
+                "pair_id": 3,
+                "var": "pool",
+                "prob": 887.5,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*pool)",
+                "anchor": "void ngx_slab_free_locked ( ngx_slab_pool_t * pool , void * p )",
+                "file": "src/core/ngx_slab.c"
+            },
+            {
+                "id": 112,
+                "pair_id": 3,
+                "var": "filename",
+                "prob": 877.5,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*filename)",
+                "anchor": "char * ngx_conf_parse ( ngx_conf_t * cf , ngx_str_t * filename )",
+                "file": "src/core/ngx_conf_file.c"
+            }
+        ],
+        "group_4": [
+            {
+                "id": 404,
+                "pair_id": 0,
+                "var": "pool",
+                "prob": 877.5,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*pool)",
+                "anchor": "static ngx_int_t ngx_parse_inet_url ( ngx_pool_t * pool , ngx_url_t * u )",
+                "file": "src/core/ngx_inet.c"
+            },
+            {
+                "id": 23,
+                "pair_id": 0,
+                "var": "argv",
+                "prob": 865.0,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*argv)",
+                "anchor": "static ngx_int_t ngx_get_options ( int argc , char * const * argv )",
+                "file": "src/core/nginx.c"
+            },
+            {
+                "id": 3145,
+                "pair_id": 1,
+                "var": "rev",
+                "prob": 860.0,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*rev)",
+                "anchor": "void ngx_mail_smtp_auth_state ( ngx_event_t * rev )",
+                "file": "src/mail/ngx_mail_smtp_handler.c"
+            },
+            {
+                "id": 860,
+                "pair_id": 1,
+                "var": "ctx",
+                "prob": 857.5,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*ctx)",
+                "anchor": "static void ngx_resolver_report_srv ( ngx_resolver_t * r , ngx_resolver_ctx_t * ctx )",
+                "file": "src/core/ngx_resolver.c"
+            },
+            {
+                "id": 2624,
+                "pair_id": 2,
+                "var": "lcf",
+                "prob": 810.0,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*lcf)",
+                "anchor": "static char * ngx_http_rewrite_if_condition ( ngx_conf_t * cf , ngx_http_rewrite_loc_conf_t * lcf )",
+                "file": "src/http/modules/ngx_http_rewrite_module.c"
+            },
+            {
+                "id": 3471,
+                "pair_id": 2,
+                "var": "cmd",
+                "prob": 810.0,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*cmd)",
+                "anchor": "static char * ngx_stream_log_set_log ( ngx_conf_t * cf , ngx_command_t * cmd , void * conf )",
+                "file": "src/stream/ngx_stream_log_module.c"
+            },
+            {
+                "id": 765,
+                "pair_id": 3,
+                "var": "ident",
+                "prob": 802.8,
+                "is_pointer": false,
+                "size_lookup": "sizeof(ngx_uint_t)",
+                "anchor": "static void ngx_resolver_process_a ( ngx_resolver_t * r , u_char * buf , size_t n , ngx_uint_t ident , ngx_uint_t code , ngx_uint_t qtype , ngx_uint_t nan , ngx_uint_t trunc , ngx_uint_t ans )",
+                "file": "src/core/ngx_resolver.c"
+            },
+            {
+                "id": 766,
+                "pair_id": 3,
+                "var": "code",
+                "prob": 802.8,
+                "is_pointer": false,
+                "size_lookup": "sizeof(ngx_uint_t)",
+                "anchor": "static void ngx_resolver_process_a ( ngx_resolver_t * r , u_char * buf , size_t n , ngx_uint_t ident , ngx_uint_t code , ngx_uint_t qtype , ngx_uint_t nan , ngx_uint_t trunc , ngx_uint_t ans )",
+                "file": "src/core/ngx_resolver.c"
+            }
+        ],
+        "group_5": [
+            {
+                "id": 767,
+                "pair_id": 0,
+                "var": "qtype",
+                "prob": 802.8,
+                "is_pointer": false,
+                "size_lookup": "sizeof(ngx_uint_t)",
+                "anchor": "static void ngx_resolver_process_a ( ngx_resolver_t * r , u_char * buf , size_t n , ngx_uint_t ident , ngx_uint_t code , ngx_uint_t qtype , ngx_uint_t nan , ngx_uint_t trunc , ngx_uint_t ans )",
+                "file": "src/core/ngx_resolver.c"
+            },
+            {
+                "id": 768,
+                "pair_id": 0,
+                "var": "nan",
+                "prob": 802.8,
+                "is_pointer": false,
+                "size_lookup": "sizeof(ngx_uint_t)",
+                "anchor": "static void ngx_resolver_process_a ( ngx_resolver_t * r , u_char * buf , size_t n , ngx_uint_t ident , ngx_uint_t code , ngx_uint_t qtype , ngx_uint_t nan , ngx_uint_t trunc , ngx_uint_t ans )",
+                "file": "src/core/ngx_resolver.c"
+            },
+            {
+                "id": 769,
+                "pair_id": 1,
+                "var": "trunc",
+                "prob": 802.8,
+                "is_pointer": false,
+                "size_lookup": "sizeof(ngx_uint_t)",
+                "anchor": "static void ngx_resolver_process_a ( ngx_resolver_t * r , u_char * buf , size_t n , ngx_uint_t ident , ngx_uint_t code , ngx_uint_t qtype , ngx_uint_t nan , ngx_uint_t trunc , ngx_uint_t ans )",
+                "file": "src/core/ngx_resolver.c"
+            },
+            {
+                "id": 770,
+                "pair_id": 1,
+                "var": "ans",
+                "prob": 802.8,
+                "is_pointer": false,
+                "size_lookup": "sizeof(ngx_uint_t)",
+                "anchor": "static void ngx_resolver_process_a ( ngx_resolver_t * r , u_char * buf , size_t n , ngx_uint_t ident , ngx_uint_t code , ngx_uint_t qtype , ngx_uint_t nan , ngx_uint_t trunc , ngx_uint_t ans )",
+                "file": "src/core/ngx_resolver.c"
+            },
+            {
+                "id": 2344,
+                "pair_id": 2,
+                "var": "cmd",
+                "prob": 792.5,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*cmd)",
+                "anchor": "static char * ngx_http_log_set_log ( ngx_conf_t * cf , ngx_command_t * cmd , void * conf )",
+                "file": "src/http/modules/ngx_http_log_module.c"
+            },
+            {
+                "id": 378,
+                "pair_id": 2,
+                "var": "value",
+                "prob": 785.0,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*value)",
+                "anchor": "ngx_int_t ngx_hash_add_key ( ngx_hash_keys_arrays_t * ha , ngx_str_t * key , void * value , ngx_uint_t flags )",
+                "file": "src/core/ngx_hash.c"
+            },
+            {
+                "id": 211,
+                "pair_id": 3,
+                "var": "cycle",
+                "prob": 770.0,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*cycle)",
+                "anchor": "ngx_int_t ngx_open_listening_sockets ( ngx_cycle_t * cycle )",
+                "file": "src/core/ngx_connection.c"
+            },
+            {
+                "id": 3746,
+                "pair_id": 3,
+                "var": "shpool",
+                "prob": 770.0,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*shpool)",
+                "anchor": "static ngx_stream_upstream_rr_peers_t * ngx_stream_upstream_zone_copy_peers ( ngx_slab_pool_t * shpool , ngx_stream_upstream_srv_conf_t * uscf , ngx_stream_upstream_srv_conf_t * ouscf )",
+                "file": "src/stream/ngx_stream_upstream_zone_module.c"
+            }
+        ],
+        "group_6": [
+            {
+                "id": 3747,
+                "macro_name": "CS_G6_P0_NODE_A",
+                "pair_id": 0,
+                "var": "uscf",
+                "prob": 770.0,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*uscf)",
+                "anchor": "static ngx_stream_upstream_rr_peers_t * ngx_stream_upstream_zone_copy_peers ( ngx_slab_pool_t * shpool , ngx_stream_upstream_srv_conf_t * uscf , ngx_stream_upstream_srv_conf_t * ouscf )",
+                "file": "src/stream/ngx_stream_upstream_zone_module.c"
+            },
+            {
+                "id": 3748,
+                "pair_id": 0,
+                "var": "ouscf",
+                "prob": 770.0,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*ouscf)",
+                "anchor": "static ngx_stream_upstream_rr_peers_t * ngx_stream_upstream_zone_copy_peers ( ngx_slab_pool_t * shpool , ngx_stream_upstream_srv_conf_t * uscf , ngx_stream_upstream_srv_conf_t * ouscf )",
+                "file": "src/stream/ngx_stream_upstream_zone_module.c"
+            },
+            {
+                "id": 704,
+                "pair_id": 1,
+                "var": "names",
+                "prob": 762.5,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*names)",
+                "anchor": "ngx_resolver_t * ngx_resolver_create ( ngx_conf_t * cf , ngx_str_t * names , ngx_uint_t n )",
+                "file": "src/core/ngx_resolver.c"
+            },
+            {
+                "id": 1690,
+                "pair_id": 1,
+                "var": "rev",
+                "prob": 752.5,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*rev)",
+                "anchor": "static void ngx_http_process_request_line ( ngx_event_t * rev )",
+                "file": "src/http/ngx_http_request.c"
+            },
+            {
+                "id": 483,
+                "pair_id": 2,
+                "var": "file",
+                "prob": 735.0,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*file)",
+                "anchor": "ngx_int_t ngx_add_module ( ngx_conf_t * cf , ngx_str_t * file , ngx_module_t * module , char * * order )",
+                "file": "src/core/ngx_module.c"
+            },
+            {
+                "id": 484,
+                "pair_id": 2,
+                "var": "module",
+                "prob": 735.0,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*module)",
+                "anchor": "ngx_int_t ngx_add_module ( ngx_conf_t * cf , ngx_str_t * file , ngx_module_t * module , char * * order )",
+                "file": "src/core/ngx_module.c"
+            },
+            {
+                "id": 1692,
+                "pair_id": 3,
+                "var": "rev",
+                "prob": 702.5,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*rev)",
+                "anchor": "static void ngx_http_process_request_headers ( ngx_event_t * rev )",
+                "file": "src/http/ngx_http_request.c"
+            },
+            {
+                "id": 751,
+                "pair_id": 3,
+                "var": "buf",
+                "prob": 700.0,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*buf)",
+                "anchor": "static void ngx_resolver_process_response ( ngx_resolver_t * r , u_char * buf , size_t n , ngx_uint_t tcp )",
+                "file": "src/core/ngx_resolver.c"
+            }
+        ],
+        "group_7": [
+            {
+                "id": 1575,
+                "pair_id": 0,
+                "var": "parent",
+                "prob": 697.5,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*parent)",
+                "anchor": "static char * ngx_http_core_merge_loc_conf ( ngx_conf_t * cf , void * parent , void * child )",
+                "file": "src/http/ngx_http_core_module.c"
+            },
+            {
+                "id": 1576,
+                "pair_id": 0,
+                "var": "child",
+                "prob": 697.5,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*child)",
+                "anchor": "static char * ngx_http_core_merge_loc_conf ( ngx_conf_t * cf , void * parent , void * child )",
+                "file": "src/http/ngx_http_core_module.c"
+            },
+            {
+                "id": 1553,
+                "pair_id": 1,
+                "var": "cmd",
+                "prob": 682.5,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*cmd)",
+                "anchor": "static char * ngx_http_core_location ( ngx_conf_t * cf , ngx_command_t * cmd , void * dummy )",
+                "file": "src/http/ngx_http_core_module.c"
+            },
+            {
+                "id": 716,
+                "pair_id": 1,
+                "var": "ctx",
+                "prob": 677.5,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*ctx)",
+                "anchor": "void ngx_resolve_name_done ( ngx_resolver_ctx_t * ctx )",
+                "file": "src/core/ngx_resolver.c"
+            },
+            {
+                "id": 3106,
+                "pair_id": 2,
+                "var": "rev",
+                "prob": 672.5,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*rev)",
+                "anchor": "static void ngx_mail_proxy_imap_handler ( ngx_event_t * rev )",
+                "file": "src/mail/ngx_mail_proxy_module.c"
+            },
+            {
+                "id": 1109,
+                "pair_id": 2,
+                "var": "cache",
+                "prob": 660.0,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*cache)",
+                "anchor": "void * ngx_ssl_cache_connection_fetch ( ngx_ssl_cache_t * cache , ngx_pool_t * pool , ngx_uint_t index , char * * err , ngx_str_t * path , void * data )",
+                "file": "src/event/ngx_event_openssl_cache.c"
+            },
+            {
+                "id": 1110,
+                "pair_id": 3,
+                "var": "pool",
+                "prob": 660.0,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*pool)",
+                "anchor": "void * ngx_ssl_cache_connection_fetch ( ngx_ssl_cache_t * cache , ngx_pool_t * pool , ngx_uint_t index , char * * err , ngx_str_t * path , void * data )",
+                "file": "src/event/ngx_event_openssl_cache.c"
+            },
+            {
+                "id": 1112,
+                "pair_id": 3,
+                "var": "path",
+                "prob": 660.0,
+                "is_pointer": true,
+                "size_lookup": "sizeof(*path)",
+                "anchor": "void * ngx_ssl_cache_connection_fetch ( ngx_ssl_cache_t * cache , ngx_pool_t * pool , ngx_uint_t index , char * * err , ngx_str_t * path , void * data )",
+                "file": "src/event/ngx_event_openssl_cache.c"
+            }
+        ]
+    }
+}
