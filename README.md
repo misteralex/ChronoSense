@@ -100,36 +100,39 @@ The repository includes a comprehensive set of documents and POC evidences:
 <br></br>
 ## 📂 ChronoSense - Full Device Tree
 
-```text
+```
 .
-├── 📊 data/                            # High-fidelity datasets (Parquet format)
-│   ├── chronosense-demo.parquet        # Consolidated sample for quick analysis
-│   ├── chronosense-noisy.parquet       # Jitter and noise simulation metrics
-│   ├── chronosense-normal.parquet      # Baseline operational telemetry
-│   └── chronosense-stress.parquet      # Edge-case high-concurrency results
+├── data/                                   # High-fidelity datasets (Parquet format)
+│   ├── chronosense-demo.parquet            # Consolidated sample for quick analysis
+│   ├── chronosense-noisy.parquet           # Jitter and noise simulation metrics
+│   ├── chronosense-normal.parquet          # Baseline operational telemetry
+│   └── chronosense-stress.parquet          # Edge-case high-concurrency results
 │
-├── 📜 docs/                           # Technical specifications & IP documentation
+├── docs/                                   # Technical specifications & IP documentation
 │   ├── architecture.md                 
 │   ├── pipeline_injection_strategy.md
 │   ├── interface_and_strategic_overview.md
-│   └── 🧪 artifacts/                 # Validation proofs and binary patches
-│       ├── cs_catalog.json           # Data discovery & profiling metadata
-│       ├── cs_demo_noisy_stress.mp4  # Visual proof: Stress scenario stability
-│       ├── cs_demo_normal.mp4        # Visual proof: Standard operation
-│       ├── cs_demo_optimized.mp4     # Performance comparison: O0 vs O3 Fusion
-│       └── 🛠️ nginx-cs-patch/        # Instrumented Nginx core modules
-│           ├── ngx_epoll_module.c    # Event-loop level telemetry injection
-│           └── ngx_http_core_module.c # Request lifecycle atomic hooks
+│   └── artifacts/                          # Validation proofs and binary patches
+│       ├── cs_catalog.json                 # Data discovery & profiling metadata
+│       ├── cs_demo_noisy_stress.mp4        # Visual proof: Stress scenario stability
+│       ├── cs_demo_normal.mp4              # Visual proof: Standard operation
+│       ├── cs_demo_optimized.mp4           # Performance comparison: O0 vs O3 Fusion
+│       └── nginx-cs-patch/                 # Instrumented Nginx core modules
+│           ├── ngx_epoll_module.c          # Event-loop level telemetry injection
+│           └── ngx_http_core_module.c      # Request lifecycle atomic hooks
 │
-├── 🛠️ scripts/                      # System orchestration & benchmarking
-│   ├── cs-build-host-project.sh      # Automated Build & Binary Fusion orchestrator
-│   ├── cs_demo_host_nginx.py         # Locust-based performance test suite
-│   └── cs_cleanup.py                 # System V IPC & Shared Memory sanitizer
+├── tools/                                  # System orchestration & benchmarking
+│   ├── cs-build-host-project.sh            # Automated Build & Binary Fusion orchestrator
+│   ├── cs_demo_host_nginx.py               # Locust-based performance test suite
+│   ├── cs_trace.py                         # Real-time visualization for probes and statistics
+│   └── cs_cleanup.py                       # System V IPC & Shared Memory sanitizer
 │
-└── 🧩 src/                          # Core ChronoSense Engine (Proprietary)
-    ├── cs_core.c                     # Atomic implementation & SHM logic
-    ├── cs_core.h                     # Internal engine definitions
-    └── cs_interface.h                # Public API / Contract for host integration
+└── src/                                    # Core ChronoSense Engine (Proprietary)
+    ├── core      
+    │   └── cs_core.c                       # Atomic implementation & SHM logic
+    └── include
+        ├── cs_core.h                       # Internal engine definitions
+        └── cs_interface.h                  # Public API / Contract for host integration
 ```
 ---
 
